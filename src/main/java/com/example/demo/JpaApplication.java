@@ -24,5 +24,6 @@ public class JpaApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		LOGGER.info("All users: {}", personJdbcDao.findAll());
+		LOGGER.info("User id 2: " + personJdbcDao.findById(2));
 	}
 }
